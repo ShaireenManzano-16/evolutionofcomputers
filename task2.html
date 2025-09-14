@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer History Timeline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Interactive Timeline of Computer History</h1>
+    <p>Discover the key milestones that shaped the evolution of computing</p>
+  </section>
+
+  <!-- Carousel Section -->
+<div id="historyCarousel" class="carousel slide container my-5" data-bs-ride="carousel">
+  <div class="carousel-inner rounded shadow-lg">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex flex-column justify-content-center align-items-center p-5" style="background: #ffe8d6; min-height: 300px;">
+        <h2 class="text-primary mb-3">What is Computer History?</h2>
+        <p class="text-center w-75">
+          Computer history is the study of how computing technology evolved — 
+          from the earliest mechanical calculators, to the first electronic computers,
+          to modern AI and cloud computing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex flex-column justify-content-center align-items-center p-5" style="background: #fff3e6; min-height: 300px;">
+        <h2 class="text-primary mb-3">Why It Matters</h2>
+        <p class="text-center w-75">
+          Understanding computer history helps us appreciate the breakthroughs 
+          that shaped today’s digital world and inspires innovation for the future.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex flex-column justify-content-center align-items-center p-5" style="background: #ffe0cc; min-height: 300px;">
+        <h2 class="text-primary mb-3">Key Themes</h2>
+        <p class="text-center w-75">
+          Major milestones include the invention of the transistor, microprocessors, 
+          the birth of the Internet, and the rise of artificial intelligence.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+  </button>
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="2"></button>
+  </div>
+</div>
+
+<div class="container my-4 text-center">
+  <input 
+    type="text" 
+    id="searchInput" 
+    class="form-control w-50 mx-auto" 
+    placeholder="Search timeline...">
+</div>
+
+
+<!-- Timeline Title -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="timeline-title">MILESTONES IN COMPUTER HISTORY</h2>
+    <p class="lead">Explore the key events that shaped the evolution of computing technology.</p>
+  </div>
+</section>
+
+
+  <!-- Timeline -->
+  <div class="timeline container">
+
+    <!-- ENIAC -->
+    <div class="timeline-item left" onclick="toggleDetails(this)">
+    <img src="img/ENIAC.jpg" alt="ENIAC Computer">
+    <h4 class="text-primary">ENIAC – 1945</h4>
+    <div class="details">
+      <p><strong>Brief Description:</strong> The ENIAC (Electronic Numerical Integrator and Computer) was the first general-purpose electronic computer, designed to perform a wide variety of calculations. It replaced slow mechanical calculators and punched-card machines, marking a transition from electromechanical to fully electronic computing.</p>
+      
+      <p><strong>Performance Impact:</strong> ENIAC’s ability to perform thousands of calculations per second was a breakthrough compared to the manual and mechanical methods available at the time. This massive leap in speed and accuracy enabled scientists to solve complex problems in physics, engineering, and cryptography much faster. It laid the groundwork for modern computing by demonstrating that electronic systems could outperform human and mechanical computation. The innovation directly influenced the development of programmable computers, setting the standard for future advances in computer performance and design.</p>
+    </div>
+  </div>
+
+
+    <!-- Transistor -->
+    <div class="timeline-item right" onclick="toggleDetails(this)">
+  <img src="img/Transitor.jpg" alt="Transistor">
+  <h4 class="text-primary">Invention of the Transistor – 1947</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> The invention of the transistor at Bell Labs in 1947 marked a shift from bulky vacuum tubes to smaller, more reliable semiconductor devices. Transistors replaced vacuum tubes as the key switching component in computers, reducing size, heat, and fragility in electronic circuits.</p>
+    
+    <p><strong>Performance Impact:</strong> Transistors significantly improved computing performance by allowing computers to run faster, more efficiently, and with far lower power consumption than vacuum tube systems. Their durability and low cost made computers more accessible, moving them out of exclusive government and research use toward commercial and personal applications. This breakthrough directly enabled the creation of smaller, more powerful machines, paving the way for integrated circuits and the miniaturization of electronics. Ultimately, the transistor was the foundation for modern microprocessors and the rapid growth of the computing industry.</p>
+  </div>
+</div>
+
+
+    <!-- Microprocessor -->
+    <div class="timeline-item left" onclick="toggleDetails(this)">
+  <img src="img/First Microprocessor.jpg" alt="Intel 4004 Microprocessor">
+  <h4 class="text-primary">The Microprocessor – 1971</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 1971, Intel released the 4004, the first commercial microprocessor, which placed the central processing unit (CPU) onto a single chip. This innovation replaced complex multi-chip designs and allowed computers to be smaller, more affordable, and easier to build.</p>
+    
+    <p><strong>Performance Impact:</strong> The microprocessor drastically improved computing efficiency by integrating thousands of transistors into one compact unit, reducing both cost and physical space. This shift enabled the rise of personal computers, making computing accessible to households, schools, and small businesses rather than being limited to large organizations. Performance improvements allowed software applications to expand beyond scientific and military use into productivity, gaming, and education. The microprocessor’s flexibility also set the stage for rapid advances in computing power, leading to the development of modern processors that continue to drive innovation in every digital device today.</p>
+  </div>
+</div>
+
+
+    <!-- GUI -->
+   <div class="timeline-item right" onclick="toggleDetails(this)">
+  <img src="img/Graphical User Interface 1973.jpg" alt="Xerox GUI">
+  <h4 class="text-primary">Graphical User Interface – 1973</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 1973, Xerox introduced the first graphical user interface (GUI) with their Alto computer, replacing text-based command lines with visual elements such as icons, windows, and menus. This design was later refined and popularized by the Apple Macintosh in 1984 and eventually by Microsoft Windows.</p>
+    
+    <p><strong>Performance Impact:</strong> The GUI revolutionized how people interacted with computers by making them intuitive and accessible to non-technical users. Instead of memorizing commands, users could now navigate visually, dramatically lowering the barrier to entry for computing. This shift accelerated the adoption of personal computers in homes, schools, and offices, broadening their use beyond specialists. GUIs also paved the way for software industries focused on design, multimedia, and productivity, directly shaping the modern digital experience we know today.</p>
+  </div>
+</div>
+
+
+    <!-- IBM PC -->
+   <div class="timeline-item left" onclick="toggleDetails(this)">
+  <img src="img/Personal Computer (IBM PC) – 1981.jpg" alt="IBM PC">
+  <h4 class="text-primary">Personal Computer (IBM PC) – 1981</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 1981, IBM released the IBM PC, which established a universal standard for personal computers. Unlike earlier hobbyist or proprietary systems, the IBM PC provided a reliable, mass-produced design that other manufacturers could follow, driving compatibility across the industry.</p>
+    
+    <p><strong>Performance Impact:</strong> The IBM PC transformed computing from a specialized tool into an everyday necessity for work, school, and home. Its standardized architecture allowed software and hardware developers to create products that worked across different machines, fueling a rapidly growing ecosystem. Businesses adopted PCs for productivity applications like word processing and spreadsheets, while schools integrated them into classrooms for education. This milestone not only accelerated mass adoption but also laid the foundation for the modern PC industry, where compatibility and scalability continue to drive innovation.</p>
+  </div>
+</div>
+
+
+
+  <div class="timeline-item right" onclick="toggleDetails(this)">
+  <img src="img/Birth of the Internet.jpg" alt="Birth of the Internet">
+  <h4 class="text-primary">Birth of the Internet – 1983</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 1983, the transition to the TCP/IP protocol marked the official birth of the modern Internet. This universal standard replaced earlier networking systems and allowed different computers and networks to connect seamlessly across the globe.</p>
+    
+    <p><strong>Performance Impact:</strong> The adoption of TCP/IP revolutionized communication by enabling reliable, scalable, and instant data exchange worldwide. It transformed computing performance by linking isolated systems into a vast global network, fostering collaboration and information sharing at unprecedented speed. Businesses, governments, and universities rapidly embraced the technology, fueling advancements in research, commerce, and communication. This milestone laid the groundwork for the World Wide Web and the digital economy, making the Internet the backbone of modern life.</p>
+  </div>
+</div>
+
+    <!-- World Wide Web -->
+    <div class="timeline-item left" onclick="toggleDetails(this)">
+  <img src="img/The World Wide Web_.jpg" alt="World Wide Web">
+  <h4 class="text-primary">The World Wide Web – 1989</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 1989, Tim Berners-Lee proposed the World Wide Web, a system of interlinked hypertext documents accessible via the Internet. This innovation replaced the limited exchange of plain text files and enabled users to share multimedia content through web pages and hyperlinks.</p>
+    
+    <p><strong>Performance Impact:</strong> The World Wide Web transformed computing by making the Internet accessible and useful to the general public. It allowed for rich, interactive content that reshaped communication, education, and business on a global scale. By introducing websites, browsers, and hyperlinks, it drastically improved information retrieval and sharing compared to earlier network systems. The Web also sparked the rise of e-commerce, online communities, and digital services, laying the foundation for the modern digital economy and today’s interconnected world.</p>
+  </div>
+</div>
+
+
+    <!-- Smartphones -->
+    <div class="timeline-item right" onclick="toggleDetails(this)">
+  <img src="img/Smartphones – 2007.jpg" alt="iPhone 2007">
+  <h4 class="text-primary">Smartphones – 2007</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In 2007, Apple introduced the iPhone, a revolutionary device that combined a mobile phone, computer, and Internet access into one handheld product. Unlike earlier mobile phones, it featured a multitouch screen and an app-driven interface, setting a new standard for mobile technology.</p>
+    
+    <p><strong>Performance Impact:</strong> Smartphones transformed daily computing by putting powerful processing and connectivity directly into people’s pockets. They enabled instant communication, web browsing, and access to apps, replacing many standalone devices like cameras, MP3 players, and GPS units. This integration greatly improved convenience and productivity, allowing users to work, learn, and socialize on the go. Beyond personal use, smartphones also created new industries such as mobile apps, digital payments, and social media platforms, fundamentally reshaping the global economy and how society interacts with technology.</p>
+  </div>
+</div>
+
+
+    <!-- Cloud Computing -->
+    <div class="timeline-item left" onclick="toggleDetails(this)">
+  <img src="img/Cloud Computing – 2010s.png" alt="Cloud Computing">
+  <h4 class="text-primary">Cloud Computing – 2010s</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In the 2010s, platforms like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud popularized cloud computing, which delivered computing resources over the Internet. This model replaced reliance on local servers and personal hardware by providing on-demand access to storage, processing power, and software.</p>
+    
+    <p><strong>Performance Impact:</strong> Cloud computing revolutionized performance by allowing businesses and individuals to scale applications globally without investing in costly physical infrastructure. It enabled faster deployment of services, improved collaboration through real-time data access, and reduced operational costs. Developers could now focus on innovation rather than server maintenance, leading to rapid growth in industries such as e-commerce, streaming, and artificial intelligence. By abstracting hardware limitations, cloud technology fundamentally changed how computing resources are delivered, creating a flexible and resilient foundation for the digital economy.</p>
+  </div>
+</div>
+
+
+    <!-- AI -->
+   <div class="timeline-item right" onclick="toggleDetails(this)">
+  <img src="img/Artificial Intelligence Boom – 2020.png" alt="Artificial Intelligence">
+  <h4 class="text-primary">Artificial Intelligence Boom – 2020s</h4>
+  <div class="details">
+    <p><strong>Brief Description:</strong> In the 2020s, breakthroughs in artificial intelligence, such as deep learning, computer vision, and large language models like GPT, brought AI into mainstream use. These technologies replaced many manual and routine processes with automated, adaptive, and intelligent systems that could learn and generate insights.</p>
+    
+    <p><strong>Performance Impact:</strong> AI revolutionized computing performance by enabling machines to handle tasks once thought exclusive to human intelligence, such as natural language understanding, image recognition, and creative content generation. This greatly enhanced productivity across industries, from automating diagnostics in healthcare to optimizing logistics and improving education through personalized learning. The integration of AI into everyday tools accelerated innovation, allowing faster decision-making and more efficient problem-solving. As AI continues to evolve, it is driving a new era of intelligent computing that reshapes how society interacts with technology and how businesses compete globally.</p>
+  </div>
+</div>
+
+  </div>
+
+
+  <section id="about" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">About Computer History</h2>
+    <p class="lead">The story of computers spans centuries — from simple counting machines to today’s artificial intelligence. This timeline showcases key milestones that shaped our digital world.</p>
+  </div>
+</section>
+
+<section id="pioneers" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Notable Pioneers</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <img src="img/Ada Lovelace.jpg" class="rounded-circle mb-3" width="120" alt="Ada Lovelace">
+        <h5>Ada Lovelace</h5>
+        <p>Known as the world’s first computer programmer for her work on Charles Babbage’s Analytical Engine.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/Alan Turing with Enigma Machine.jpg" class="rounded-circle mb-3" width="120" alt="Alan Turing">
+        <h5>Alan Turing</h5>
+        <p>Pioneer of theoretical computer science and artificial intelligence, instrumental in WWII codebreaking.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="img/Tim Berners-Lee.jpg" class="rounded-circle mb-3" width="120" alt="Tim Berners-Lee">
+        <h5>Tim Berners-Lee</h5>
+        <p>Inventor of the World Wide Web, making information accessible worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funfacts" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Fun Facts About Computers</h2>
+    <ul class="list-group list-group-flush mx-auto" style="max-width:600px;">
+      <li class="list-group-item">💾 The first 1 GB hard drive (1980) weighed over 500 pounds.</li>
+      <li class="list-group-item">📱 Today’s smartphones are more powerful than the computers used in the Apollo missions.</li>
+      <li class="list-group-item">🖥️ The first mouse was made of wood in 1964.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="quiz" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">Quick Quiz</h2>
+    <p>Who invented the World Wide Web?</p>
+    <button class="btn btn-outline-primary m-2" onclick="checkAnswer('a')">Bill Gates</button>
+    <button class="btn btn-outline-primary m-2" onclick="checkAnswer('b')">Tim Berners-Lee</button>
+    <button class="btn btn-outline-primary m-2" onclick="checkAnswer('c')">Steve Jobs</button>
+    <p id="quizResult" class="mt-3 fw-bold"></p>
+  </div>
+</section>
+
+
+
+
+<section id="future" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">The Future of Computing</h2>
+    <p class="lead">From <strong>quantum computing</strong> to <strong>artificial intelligence</strong>, technology continues to evolve rapidly. The next chapter in computer history is being written today — and you’re part of it.</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Computer History Timeline Project | Built with HTML, CSS, JS, and Bootstrap</p>
+  </footer>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
